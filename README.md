@@ -23,6 +23,7 @@ The refactored VBA code is modified to using only 1 “For” loop (“i”) ins
 
 The difference in the refactored code is that since there is one “For” loop, the loop will go through the ticker symbol column looking for the current ticker symbol as defined by “tickerIndex”. The volume data in that row will be added to the current ticker, while also checking the previous and next rows whether this is the first / last time the current ticker is present to store values for staring / ending prices. When this process is done for the current row, the “For” loop will go to the next index position in “tickerIndex” and set a new current ticker symbol and the same analysis is performed again for the next iteration of loop “i” until it reaches the end of the ticker symbol column. 
 <br/>
+<br/>
 
 ## Results
 
@@ -39,6 +40,7 @@ The original code completed the analysis in 0.7304688 seconds ([results](https:/
 ### Verdict
 
 Comparing the results of the original code versus the refactored code, it can be spotted the refactored code is about 7 times faster than the original code. The original code runs slower in comparison because the second “For” loop runs through all the rows 12 times (once for each iteration of the “i” loop), whereas the single “For” loop in the refactored code only runs through all the rows 1 time. There are 3012 rows in the data, so the original code processes 36144 rows (3012 rows * 12 ticker symbols) to finish the analysis, while the refactored code only has to go through 3012 rows and tallies up each row to complete the analysis. 
+<br/>
 <br/>
 
 ## Summary
