@@ -7,7 +7,7 @@ The purpose of this analysis is to compare the difference in start to finish tim
 
 #### VBA Code Provided in the Lesson
 
-The original code contains a set of nested “For” loops, which has 2 “For” loops, one loop (loop “i”) to sort through the 12 different ticker symbols and another loop (loop “j”) to go through all of the rows that contain ticker symbol data (The 2 “For” loops can be seen (here) [https://github.com/donovancai/stock-analysis/blob/main/Resources/2_For_loops.PNG]). The 12 different ticker symbols are stored in an output array called “tickers”, seen (here) [https://github.com/donovancai/stock-analysis/blob/main/Resources/tickers_array.PNG]. 
+The original code contains a set of nested “For” loops, which has 2 “For” loops, one loop (loop “i”) to sort through the 12 different ticker symbols and another loop (loop “j”) to go through all of the rows that contain ticker symbol data (The 2 “For” loops can be seen [here] (https://github.com/donovancai/stock-analysis/blob/main/Resources/2_For_loops.PNG) ). The 12 different ticker symbols are stored in an output array called “tickers”, seen [here] (https://github.com/donovancai/stock-analysis/blob/main/Resources/tickers_array.PNG). 
 
 The VBA code runs through each iteration of the first “For” loop “i”, which is set from 0 to 11; this matches the number of ticker symbols. Excel is told to look for the specific ticker symbol in order, as defined by the output array “tickers”.  
 
@@ -17,7 +17,7 @@ Once the “j” loop has completed the analysis for the current ticker symbol, 
 
 #### Refactored VBA Code 
 
-The refactored VBA code is modified to using only 1 “For” loop (“i”) instead of 2. There is now only 1 “For” loop created to go through all of the rows in the ticker symbol column. A new variable, “tickerIndex”, is created and initialized to have the value of 0. “tickerIndex” is then used as an index value for each output array (ticker volume, starting and ending prices) when the “For” loop runs through all of the rows in the ticker symbol column. The 1 “For” loop can be seen (here) [https://github.com/donovancai/stock-analysis/blob/main/Resources/1_For_loop.PNG].
+The refactored VBA code is modified to using only 1 “For” loop (“i”) instead of 2. There is now only 1 “For” loop created to go through all of the rows in the ticker symbol column. A new variable, “tickerIndex”, is created and initialized to have the value of 0. “tickerIndex” is then used as an index value for each output array (ticker volume, starting and ending prices) when the “For” loop runs through all of the rows in the ticker symbol column. The 1 “For” loop can be seen [here] (https://github.com/donovancai/stock-analysis/blob/main/Resources/1_For_loop.PNG).
 
 The difference in the refactored code is that since there is one “For” loop, the loop will go through the ticker symbol column looking for the current ticker symbol as defined by “tickerIndex”. The volume data in that row will be added to the current ticker, while also checking the previous and next rows whether this is the first / last time the current ticker is present to store values for staring / ending prices. When this process is done for the current row, the “For” loop will go to the next index position in “tickerIndex” and set a new current ticker symbol and the same analysis is performed again for the next iteration of loop “i” until it reaches the end of the ticker symbol column. 
 
@@ -25,11 +25,11 @@ The difference in the refactored code is that since there is one “For” loop,
 
 ### Results for year 2017
 
-The original code completed the analysis in 0.71875 seconds ( (results)[https://github.com/donovancai/stock-analysis/blob/main/Resources/Original_Code_2017.png] ), while the refactored code finished in 0.09375 seconds ( (results)[https://github.com/donovancai/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png] ). 
+The original code completed the analysis in 0.71875 seconds ( [results](https://github.com/donovancai/stock-analysis/blob/main/Resources/Original_Code_2017.png) ), while the refactored code finished in 0.09375 seconds ( [results](https://github.com/donovancai/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png) ). 
 
 ### Results for year 2018
 
-The original code completed the analysis in 0.7304688 seconds ( (results)[https://github.com/donovancai/stock-analysis/blob/main/Resources/Original_Code_2018.png] ), while the refactored code finished in 0.1054688 seconds ( (results)[https://github.com/donovancai/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png] ). 
+The original code completed the analysis in 0.7304688 seconds ( [results](https://github.com/donovancai/stock-analysis/blob/main/Resources/Original_Code_2018.png) ), while the refactored code finished in 0.1054688 seconds ( [results](https://github.com/donovancai/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png) ). 
 
 ### Verdict
 
