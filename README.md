@@ -25,11 +25,11 @@ The difference in the refactored code is that since there is one “For” loop,
 
 ### Results for year 2017
 
-The original code completed the analysis in 0.71875 seconds ( [results](https://github.com/donovancai/stock-analysis/blob/main/Resources/Original_Code_2017.png) ), while the refactored code finished in 0.09375 seconds ( [results](https://github.com/donovancai/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png) ). 
+The original code completed the analysis in 0.71875 seconds ([results](https://github.com/donovancai/stock-analysis/blob/main/Resources/Original_Code_2017.png)), while the refactored code finished in 0.09375 seconds ([results](https://github.com/donovancai/stock-analysis/blob/main/Resources/VBA_Challenge_2017.png)). 
 
 ### Results for year 2018
 
-The original code completed the analysis in 0.7304688 seconds ( [results](https://github.com/donovancai/stock-analysis/blob/main/Resources/Original_Code_2018.png) ), while the refactored code finished in 0.1054688 seconds ( [results](https://github.com/donovancai/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png) ). 
+The original code completed the analysis in 0.7304688 seconds ([results](https://github.com/donovancai/stock-analysis/blob/main/Resources/Original_Code_2018.png)), while the refactored code finished in 0.1054688 seconds ([results](https://github.com/donovancai/stock-analysis/blob/main/Resources/VBA_Challenge_2018.png)). 
 
 ### Verdict
 
