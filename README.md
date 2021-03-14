@@ -21,7 +21,7 @@ The refactored VBA code is modified to using only 1 “For” loop (“i”) ins
 
 The difference in the refactored code is that since there is one “For” loop, the loop will go through the ticker symbol column looking for the current ticker symbol as defined by “tickerIndex”. The volume data in that row will be added to the current ticker, while also checking the previous and next rows whether this is the first / last time the current ticker is present to store values for staring / ending prices. When this process is done for the current row, the “For” loop will go to the next index position in “tickerIndex” and set a new current ticker symbol and the same analysis is performed again for the next iteration of loop “i” until it reaches the end of the ticker symbol column. 
 
-##Results
+## Results
 
 ### Results for year 2017
 
